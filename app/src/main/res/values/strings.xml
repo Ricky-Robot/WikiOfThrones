@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">WikiOfThrones</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="boton_iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="olvide_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+
+    <string name="reset_title">Restablecer contraseña</string>
+    <string name="reset_correo">Ingresa el correo:</string>
+    <string name="reset_enviar">Enviar</string>
+    <string name="reset_email_empty">Por favor, ingresa un correo</string>
+    <string name="reset_correo_enviado">Se ha enviado un correo a tu email</string>
+    <string name="reset_correo_noenviado">El correo no pudo ser enviado a tu email</string>
+
+    <string name="error_contrasena">Se requiere una contraseña y esta debe ser mayor a 6 caracteres</string>
+    <string name="error_email">Se requiere el correo</string>
+
+    <string name="firebase_usuario_invalido">El usuario no existe</string>
+    <string name="firebase_credenciales_invalidas">Credenciales inválidas</string>
+    <string name="firebase_error_red">Error de red, verifica tu conexión</string>
+    <string name="firebase_conflicto_usuarios">Conflicto de usuario, este usuario ya existe</string>
+    <string name="firebase_error_desconocido">Error desconocido</string>
+
+    <string name="firebase_autenticacion_exitosa">Autenticación Exitosa</string>
+    <string name="firebase_registro_exitoso">Registro Exitoso</string>
+    <string name="firebase_correo_verificacion">El correo de verificación fue enviado a tu email</string>
+    <string name="firebase_correo_noenviado">El correo de verificación no pudo ser enviado a tu email</string>
+    <string name="firebase_sesion_cerrada">Sesión finalizada correctamente</string>
 </resources>

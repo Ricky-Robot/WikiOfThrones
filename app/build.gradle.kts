@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.rickyrobot.wikiofthrones"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.rickyrobot.wikiofthrones"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
