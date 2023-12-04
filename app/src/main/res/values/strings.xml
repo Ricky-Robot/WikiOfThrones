@@ -28,4 +28,10 @@
     <string name="firebase_correo_verificacion">El correo de verificación fue enviado a tu email</string>
     <string name="firebase_correo_noenviado">El correo de verificación no pudo ser enviado a tu email</string>
     <string name="firebase_sesion_cerrada">Sesión finalizada correctamente</string>
+
+    <string name="character_name">Name</string>
+    <string name="character_last_name">Last Name</string>
+
+    <string name="api_sin_conexion">No se pudo establecer la conexión con el servidor</string>
+    <string name="api_click_personaje">Click en personaje: </string>
 </resources>

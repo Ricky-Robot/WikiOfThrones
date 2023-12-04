@@ -1,7 +1,8 @@
-package com.rickyrobot.wikiofthrones
+package com.rickyrobot.wikiofthrones.ui.activities
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
@@ -14,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.rickyrobot.wikiofthrones.R
 import com.rickyrobot.wikiofthrones.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
@@ -24,6 +26,10 @@ class Login : AppCompatActivity() {
     private var email: String = ""
     private var contrasena: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = getColor(R.color.black) // Cambia el color de la barra de notificacion aquí
+        }
+
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -56,7 +62,7 @@ class Login : AppCompatActivity() {
                     .setTitle(getString(R.string.reset_title))
                     .setMessage(getString(R.string.reset_correo))
                     .setView(resetEmail)
-                    .setPositiveButton(getString(R.string.reset_enviar)){_, _ ->
+                    .setPositiveButton(getString(R.string.reset_enviar)){ _, _ ->
                         val mail = resetEmail.text.toString()
                         if(mail.isNotEmpty()){
                             firebaseAuth.sendPasswordResetEmail(mail).addOnSuccessListener {

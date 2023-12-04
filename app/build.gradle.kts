@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+    val retrofitVersion = "2.9.0"
+    val glideVersion = "4.15.1"
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -50,6 +52,16 @@ dependencies {
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
     // Para firebase auth
     implementation("com.google.firebase:firebase-auth:22.3.0")
+
+    //Retrofit y Gson
+    implementation ("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation ("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+
+    //Glide (para imágenes)
+    implementation ("com.github.bumptech.glide:glide:$glideVersion")
+
+    //Imágenes con bordes redondeados
+    implementation ("com.makeramen:roundedimageview:2.3.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
