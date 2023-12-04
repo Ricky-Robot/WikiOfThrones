@@ -54,7 +54,14 @@ class DetailsActivity : AppCompatActivity() {
 
                 binding.tvFullName.text = response.body()?.fullName
 
-                Glide.with(this@DetailsActivity).load(response.body()?.image).into(binding.ivImage)
+                Glide.with(this@DetailsActivity).load(response.body()?.imageUrl).into(binding.ivImage)
+
+                binding.tvFirstName.text = response.body()?.firstName
+                binding.tvLastName.text = response.body()?.lastName
+                binding.tvFamily.text = response.body()?.family
+                binding.tvTitle.text = response.body()?.title
+                binding.tvImage.text = response.body()?.image
+                binding.tvImageUrl.text = response.body()?.imageUrl
             }
         })
     }
